@@ -1,6 +1,6 @@
 ---
 kind: Deployment
-apiVersion: apps/v1
+apiVersion: apps/v2
 metadata:
       name: my-deployment
 spec:
@@ -18,13 +18,13 @@ spec:
       spec:
           containers:
             - image: rashmi171/myimage16:latest
-              name: container1
+              name: container1123
               ports:
               -containerPort: 8501
 ... 
 ---
 kind: Service
-apiVersion: v1
+apiVersion: v2
 metadata:
     name: my-service
 spec:
