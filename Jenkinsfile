@@ -21,8 +21,8 @@ pipeline{
                 usernameVariable:'DOCKER_USERNAME',passwordVariable:'DOCKER_PASSWORD')])
                 {
                     sh 'echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin'
-                    sh 'docker tag myimage16:latest1 $DOCKER_USERNAME/myimage16:latest1'
-                    sh 'docker push $DOCKER_USERNAME/myimage16:latest1'
+                    sh 'docker tag myimage16:latest $DOCKER_USERNAME/myimage16:latest'
+                    sh 'docker push $DOCKER_USERNAME/myimage16:latest'
                 }
             }
         }
