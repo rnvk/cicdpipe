@@ -13,7 +13,7 @@ spec:
     template:
       metadata:
         name: my-pod
-          labels:
+        labels:
             app: my-app
       spec:
           containers:
