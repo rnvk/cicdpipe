@@ -17,7 +17,7 @@ spec:
             app: my-app
       spec:
           containers:
-            - image: rashmi171/myimage16:latest
+            - image: rashmi171/myimage16:latest1
               name: container1
               ports:
               -containerPort: 8501
