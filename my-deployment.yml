@@ -1,7 +1,7 @@
 ---
 kind: Deployment
 apiVersion: apps/v1
-meatadata:
+metadata:
       name: my-deployment
 spec:
     replicas: 2
