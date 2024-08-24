@@ -12,7 +12,7 @@ pipeline{
         } 
         stage("Build docker images"){
             steps{
-                sh 'docker build -t myimage16:latest1  . '
+                sh 'docker build -t myimage16:latest  . '
             }
         }
         stage("Push image to Docker Hub"){
